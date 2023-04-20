@@ -395,6 +395,6 @@ use_nix() {
 use_devbox() {
     watch_file devbox.json
     if [ -f .devbox/gen/flake/flake.nix ]; then
-        eval "$(devbox shellenv --init-hook)"
+        eval "$(./devbox shellenv --init-hook)"
     fi
 }
